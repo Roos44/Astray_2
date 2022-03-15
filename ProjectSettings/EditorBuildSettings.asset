@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/SampleScene.unity
+    guid: d1c3109bdb54ad54c8a2b2838528e640
+  - enabled: 1
+    path: Assets/Scenes/Blockout.unity
+    guid: cc941d48d6be2aa46b57f69e2e825991
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 8f4524b28b4ece2408805c396b7bd2f3,
+      type: 2}
+    Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: c129d7057d3270c46819cd0187844e83,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: a6b270c36adfdcd4ea0eb1aef8f60a57,
+      type: 2}
