@@ -194,6 +194,7 @@ GameObject:
   - component: {fileID: 3936555232299392019}
   - component: {fileID: 7606961405467160786}
   - component: {fileID: 8450034490172382886}
+  - component: {fileID: 6143249472071668067}
   m_Layer: 0
   m_Name: HaningDecore1 (1)
   m_TagString: Untagged
@@ -263,6 +264,25 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!95 &6143249472071668067
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188771852914349847}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b7b10665f777ea244af20b99bfc04514, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3170799568121469442
 GameObject:
   m_ObjectHideFlags: 0
@@ -289,7 +309,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3170799568121469442}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.8911732e-12, y: -199.2522, z: 0}
+  m_LocalPosition: {x: 2.891173e-12, y: -199.2522, z: 0}
   m_LocalScale: {x: 0.525731, y: 0.525731, z: 0.525731}
   m_Children: []
   m_Father: {fileID: 1753759307923201855}
@@ -539,6 +559,7 @@ GameObject:
   - component: {fileID: 4915251998172786714}
   - component: {fileID: 3191945788423796545}
   - component: {fileID: 1932424695312459685}
+  - component: {fileID: 4642722943649648605}
   m_Layer: 0
   m_Name: HaningDecore (1)
   m_TagString: Untagged
@@ -608,6 +629,25 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!95 &4642722943649648605
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5773902124531952435}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b7b10665f777ea244af20b99bfc04514, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5999964400716424451
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,7 +674,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5999964400716424451}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -30.436415, y: -188.97496, z: 40.69004}
+  m_LocalPosition: {x: -30.43641, y: -188.97496, z: 40.69004}
   m_LocalScale: {x: 9.75983, y: 0.27091128, z: 9.75983}
   m_Children:
   - {fileID: 1753759307923201855}

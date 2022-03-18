@@ -373,6 +373,7 @@ GameObject:
   - component: {fileID: 4869293701613984099}
   - component: {fileID: 8065431828876943700}
   - component: {fileID: 1433329696254528766}
+  - component: {fileID: 7937073439368677402}
   m_Layer: 0
   m_Name: Rope2
   m_TagString: Untagged
@@ -442,6 +443,25 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!95 &7937073439368677402
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7962715057917233128}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b7b10665f777ea244af20b99bfc04514, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8644482050838571143
 GameObject:
   m_ObjectHideFlags: 0
