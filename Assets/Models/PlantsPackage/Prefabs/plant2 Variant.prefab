@@ -25,6 +25,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: plant2 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 89463cad56f99fb468cfab59d3610d61, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.43456137
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 89463cad56f99fb468cfab59d3610d61, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.09
+      objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 89463cad56f99fb468cfab59d3610d61, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -39,7 +47,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 89463cad56f99fb468cfab59d3610d61, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 3.79
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 89463cad56f99fb468cfab59d3610d61, type: 3}
       propertyPath: m_LocalRotation.w
