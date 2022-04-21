@@ -22,6 +22,7 @@ public class Animation_Trigger_Lantern : MonoBehaviour
         print("Time" + randomWait + " Play"); //debug                
         yield return new WaitForSeconds(randomWait);
         GetComponent<Animator>().Play("Sway_better"); ;  //Put your animation string
+        GetComponent<Animator>().Play("DecoreSwaye"); ;  //Put your animation string
         playAnim = true;
     }
 }
