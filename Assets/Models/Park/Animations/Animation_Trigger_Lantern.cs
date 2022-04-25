@@ -18,11 +18,10 @@ public class Animation_Trigger_Lantern : MonoBehaviour
     public IEnumerator WaitAnim()
     {
         playAnim = false;
-        int randomWait = Random.Range(0, 10);
-        print("Time" + randomWait + " Play"); //debug                
+        int randomWait = Random.Range(0, 10);          
         yield return new WaitForSeconds(randomWait);
         GetComponent<Animator>().Play("Sway_better"); ;  //Put your animation string
-        GetComponent<Animator>().Play("DecoreSwaye"); ;  //Put your animation string
+        //GetComponent<Animator>().Play("DecoreSwaye"); ;  //Put your animation string
         playAnim = true;
     }
 }
