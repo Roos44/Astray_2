@@ -7,6 +7,7 @@ public class DialogueManager : MonoBehaviour
 {
     public Text nameText;
     public Text dialogueText;
+    //public object TriggerEara;
 
     public Animator animator;
 
@@ -65,7 +66,7 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         animator.SetBool("IsOpen", false);
-        Debug.Log("End of the bla bla");
+        //Debug.Log("End of the bla bla");
     }
 
 
