@@ -33,4 +33,13 @@ public class DialogueErea : MonoBehaviour
         Destroy(gameObject);
     }
 
+    public bool EndofDialogue;
+    /*void Test()
+    {
+        if (FindObjectOfType<DialogueManager>().EndDialogue(EndofDialogue = true))
+        {
+           \(-_-\) help
+        }
+    }
+    */
 }
