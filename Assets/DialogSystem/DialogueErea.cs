@@ -6,9 +6,11 @@ public class DialogueErea : MonoBehaviour
 {
 
     public MeshRenderer ren;
+    //public GameObject canvas;
 
     private void Start()
     {
+        //canvas.SetActive(false);
         ren.enabled = false;
         //indObjectOfType(MeshRenderer)
         //MeshRenderer.enabled = false
@@ -24,6 +26,7 @@ public class DialogueErea : MonoBehaviour
         {
             //Debug.Log(" we are in BOYYYYS");
             FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+            //canvas.SetActive(true);
 
         }
     }
@@ -33,7 +36,7 @@ public class DialogueErea : MonoBehaviour
         Destroy(gameObject);
     }
 
-    public bool EndofDialogue;
+    //public bool EndofDialogue;
     /*void Test()
     {
         if (FindObjectOfType<DialogueManager>().EndDialogue(EndofDialogue = true))

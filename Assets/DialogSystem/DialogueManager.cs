@@ -62,12 +62,12 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    public bool EndofDialogue;
+   // public bool EndofDialogue;
 
     public void EndDialogue()
     {
         animator.SetBool("IsOpen", false);
-        EndofDialogue = true;
+        //EndofDialogue = true;
         //Debug.Log("End of the bla bla");
     }
 

@@ -60,7 +60,7 @@ public class EndDialogue : MonoBehaviour
             timevalue = 0;
             Destroy(gameObject);
             HospitalDialogue.SetActive(true);
-            //Debug.Log("SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1");
+            Debug.Log("SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1");
         }
         /*timevalude -= Time.deltaTime;
         if (timevalude < 0)
