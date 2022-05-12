@@ -14,6 +14,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Astray.unity
     guid: cc941d48d6be2aa46b57f69e2e825991
+  - enabled: 1
+    path: Assets/Scenes/Astray_End.unity
+    guid: 98cc59dc537a1674ca989f392dc702ab
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 8f4524b28b4ece2408805c396b7bd2f3,
       type: 2}

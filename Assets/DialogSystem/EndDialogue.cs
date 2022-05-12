@@ -9,10 +9,10 @@ public class EndDialogue : MonoBehaviour
 {
 
     public MeshRenderer ren;
-    public BoxCollider LastD;
-    public BoxCollider EndD;
-    public GameObject black;
-    public GameObject HospitalDialogue;
+    public BoxCollider LastD; //second last dialog
+    public BoxCollider EndD; // ending dialouge 
+    //public GameObject black;
+    //public GameObject HospitalDialogue;
 
 
    
@@ -24,8 +24,8 @@ public class EndDialogue : MonoBehaviour
         ren.enabled = false;
         EndD.enabled = false;
         LastD.enabled = true;
-        black.SetActive(false);
-        HospitalDialogue.SetActive(false);
+        //black.SetActive(false);
+       // HospitalDialogue.SetActive(true);
     }
 
     // Update is called once per frame
@@ -41,9 +41,6 @@ public class EndDialogue : MonoBehaviour
             EndD.enabled = true;
             ren.enabled = true;
             Countdown();
-
-            //System.Threading.Thread.Sleep(1000);
-
         }
     }
 
@@ -53,14 +50,14 @@ public class EndDialogue : MonoBehaviour
         if (timevalue > 0)
         {
             timevalue -= Time.deltaTime;
-            black.SetActive(true);
+            //black.SetActive(true);
         }
         else
         {
             timevalue = 0;
             Destroy(gameObject);
-            HospitalDialogue.SetActive(true);
-            Debug.Log("SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1");
+            //HospitalDialogue.SetActive(true);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
         /*timevalude -= Time.deltaTime;
         if (timevalude < 0)

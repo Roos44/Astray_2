@@ -125,25 +125,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: SnapPoints
       objectReference: {fileID: 0}
+    - target: {fileID: 2299034877986512689, guid: 4f742e699d4b98547938925c7eb39db7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3696544835627409034, guid: 4f742e699d4b98547938925c7eb39db7,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 3.9047627
+      value: 1.3314291
       objectReference: {fileID: 0}
     - target: {fileID: 3696544835627409034, guid: 4f742e699d4b98547938925c7eb39db7,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 4.3759546
+      value: 1.492094
       objectReference: {fileID: 0}
     - target: {fileID: 3696544835627409034, guid: 4f742e699d4b98547938925c7eb39db7,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 3.82137
+      value: 1.3029941
       objectReference: {fileID: 0}
     - target: {fileID: 3696544835627409034, guid: 4f742e699d4b98547938925c7eb39db7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.3
+      value: 1.372
       objectReference: {fileID: 0}
     - target: {fileID: 6086319633630929001, guid: 4f742e699d4b98547938925c7eb39db7,
         type: 3}
@@ -153,17 +158,17 @@ PrefabInstance:
     - target: {fileID: 6086319633630929001, guid: 4f742e699d4b98547938925c7eb39db7,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.046115298
+      value: 0.07681886
       objectReference: {fileID: 0}
     - target: {fileID: 6086319633630929001, guid: 4f742e699d4b98547938925c7eb39db7,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.1688403
+      value: 0.28125417
       objectReference: {fileID: 0}
     - target: {fileID: 6086319633630929001, guid: 4f742e699d4b98547938925c7eb39db7,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.048067845
+      value: 0.08007141
       objectReference: {fileID: 0}
     - target: {fileID: 6086319633630929001, guid: 4f742e699d4b98547938925c7eb39db7,
         type: 3}
