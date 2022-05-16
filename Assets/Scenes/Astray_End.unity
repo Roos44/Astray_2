@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -214,6 +214,12 @@ Transform:
 --- !u!1 &1306804418 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: 126d619cf4daa52469682f85c1378b4a,
+    type: 3}
+  m_PrefabInstance: {fileID: 6154357126152307709}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1306804419 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400002, guid: 126d619cf4daa52469682f85c1378b4a,
     type: 3}
   m_PrefabInstance: {fileID: 6154357126152307709}
   m_PrefabAsset: {fileID: 0}
@@ -469,12 +475,12 @@ PrefabInstance:
     - target: {fileID: 6967926266497433170, guid: 759eeffbcbc7d8a4a803a3fd323f21fa,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -395
+      value: -579
       objectReference: {fileID: 0}
     - target: {fileID: 6967926266497433170, guid: 759eeffbcbc7d8a4a803a3fd323f21fa,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 295
+      value: 541
       objectReference: {fileID: 0}
     - target: {fileID: 6967926266497433171, guid: 759eeffbcbc7d8a4a803a3fd323f21fa,
         type: 3}
@@ -489,22 +495,22 @@ PrefabInstance:
     - target: {fileID: 6967926267325652464, guid: 759eeffbcbc7d8a4a803a3fd323f21fa,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1308.3441
+      value: 1678.7467
       objectReference: {fileID: 0}
     - target: {fileID: 6967926267325652464, guid: 759eeffbcbc7d8a4a803a3fd323f21fa,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 491.30725
+      value: 973.09033
       objectReference: {fileID: 0}
     - target: {fileID: 6967926267325652464, guid: 759eeffbcbc7d8a4a803a3fd323f21fa,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -18.3
+      value: -7.3
       objectReference: {fileID: 0}
     - target: {fileID: 6967926267325652464, guid: 759eeffbcbc7d8a4a803a3fd323f21fa,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -47.6
+      value: -23
       objectReference: {fileID: 0}
     - target: {fileID: 6967926267945633000, guid: 759eeffbcbc7d8a4a803a3fd323f21fa,
         type: 3}
@@ -518,14 +524,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6967926267945633007, guid: 759eeffbcbc7d8a4a803a3fd323f21fa,
         type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 86.062805
+      objectReference: {fileID: 0}
+    - target: {fileID: 6967926267945633007, guid: 759eeffbcbc7d8a4a803a3fd323f21fa,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 53.436607
+      objectReference: {fileID: 0}
+    - target: {fileID: 6967926267945633007, guid: 759eeffbcbc7d8a4a803a3fd323f21fa,
+        type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 586
+      value: 746.3
       objectReference: {fileID: 0}
     - target: {fileID: 6967926267945633007, guid: 759eeffbcbc7d8a4a803a3fd323f21fa,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -201
+      value: -415.8
       objectReference: {fileID: 0}
+    - target: {fileID: 6967926268035607456, guid: 759eeffbcbc7d8a4a803a3fd323f21fa,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 7e89e80fce8fc06478c726f2f3de7863,
+        type: 3}
     - target: {fileID: 6967926268035607456, guid: 759eeffbcbc7d8a4a803a3fd323f21fa,
         type: 3}
       propertyPath: m_FontData.m_MaxSize
@@ -539,22 +561,22 @@ PrefabInstance:
     - target: {fileID: 6967926268035607463, guid: 759eeffbcbc7d8a4a803a3fd323f21fa,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1196.7728
+      value: 1484.2887
       objectReference: {fileID: 0}
     - target: {fileID: 6967926268035607463, guid: 759eeffbcbc7d8a4a803a3fd323f21fa,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 413.12314
+      value: 742.0829
       objectReference: {fileID: 0}
     - target: {fileID: 6967926268035607463, guid: 759eeffbcbc7d8a4a803a3fd323f21fa,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -12.4
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 6967926268035607463, guid: 759eeffbcbc7d8a4a803a3fd323f21fa,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -4.8
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 759eeffbcbc7d8a4a803a3fd323f21fa, type: 3}
@@ -1035,6 +1057,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2037080, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: near clip plane
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2037080, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_BackGroundColor.b
       value: 0
       objectReference: {fileID: 0}
@@ -1079,6 +1105,75 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!1001 &6919477606498458692
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1306804419}
+    m_Modifications:
+    - target: {fileID: 6919477606626161976, guid: 17ead78678fed344b95bc71f2599678f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6919477606626161976, guid: 17ead78678fed344b95bc71f2599678f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6919477606626161976, guid: 17ead78678fed344b95bc71f2599678f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6919477606626161976, guid: 17ead78678fed344b95bc71f2599678f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.015
+      objectReference: {fileID: 0}
+    - target: {fileID: 6919477606626161976, guid: 17ead78678fed344b95bc71f2599678f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6919477606626161976, guid: 17ead78678fed344b95bc71f2599678f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6919477606626161976, guid: 17ead78678fed344b95bc71f2599678f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6919477606626161976, guid: 17ead78678fed344b95bc71f2599678f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6919477606626161976, guid: 17ead78678fed344b95bc71f2599678f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6919477606626161976, guid: 17ead78678fed344b95bc71f2599678f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6919477606626161976, guid: 17ead78678fed344b95bc71f2599678f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6919477606626161983, guid: 17ead78678fed344b95bc71f2599678f,
+        type: 3}
+      propertyPath: m_Name
+      value: Fade
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 17ead78678fed344b95bc71f2599678f, type: 3}
 --- !u!4 &8039509649948629920
 Transform:
   m_ObjectHideFlags: 0
@@ -1130,18 +1225,67 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - 'Mee: AAw I can''t move where I am. What is that noise?'
-    - 'Peter: Excuse me, is this room 403?'
-    - "Winnie: Yes, are you a friend or family of \r\n"
-    - 'Peter: Yes a friend believes it or not that one used to be a little bit social.
-      I got worried when I never heard that one return from work.
+    - "Me: Aah, I can\u2019t move, where am I? What is that noise?\r"
+    - "\rPeter: Excuse me miss, is this room 403?"
+    - 'Winnie: Oh, yes.
 
 '
-    - "Winnie: Really? ow, sorry. It's just that we never really  talked before.
-      but we sit close to one another. I noticed the loss of weight and I got worried\u2026.
-      I tried to ask what was wrong but it was met with silence"
-    - blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla
-    - blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla
+    - "Peter: What happened?\r"
+    - "Winnie: It was a bus accident, the doctors said that everything would be okay,
+      we just have to wait now. \r\n\n"
+    - "Winnie: Are you family or a friend?\r"
+    - 'Peter: Yes we are friends, my name is Peter by the way. We used to be a lot
+      closer. I got worried when I never heard them return from work.'
+    - 'Winnie: Wow really? Ow sorry, my name is Winnie. It''s just that we never
+      used to talk before even though our desks are next to one another. I just thought
+      that it was normal behavior, you know.
+
+'
+    - 'Winnie: I however noticed the weight loss and started to worry, I tried to
+      bring it up a couple of times and reach out. But I just don''t know how to
+      do that, without making it awkward.'
+    - "Peter: Yes, I have noticed it too. I don't really know what happened, the
+      behavior change was almost overnight. Don't get me wrong it's not like my friend
+      was ever a complete social butterfly, it took a very long time before we attended
+      the weekly street gathering and even longer before it was a comfortable experience
+      for both of us.\r"
+    - 'Peter: Yes we are friends, my name is Peter by the way. We used to be a lot
+      closer. I got worried when I never heard them return from work.'
+    - "Peter: It happened about 2 months ago. I heard the door slam around 12, which
+      was strange since it wasn't their day off. \r"
+    - "Peter: This had never happened before and when I started to hear strange noises
+      I started to worry, so I knocked on the door and I was met with silence.\r"
+    - "Peter: I thought all that was needed was just time, but after it gradually
+      got worse over the weeks I started to really worry. \r"
+    - 'Winnie: Has it really been going on for that long, I feel bad for not knowing
+      earlier.'
+    - 'Winnie: I feel bad for what happend, I am sure now that the only reason the
+      accident happened is because of me.'
+    - "Winnie: I just keep thinking that if I wasn't at the bus stop this wouldn't
+      have happened, I just thought that if we started to take the same bus to and
+      from work, that we could become friends. That way it would be easier to open
+      up to me.\r"
+    - "Peter: It doesn't sound like it was your fault at all, so don't beat yourself
+      up over it. You were only trying to do a nice thing.\r"
+    - "Peter: I know how you feel, I started getting up 3 hours early and having
+      my breakfast outside for 2 months just to say hello and hopefully make the
+      mornings a little brighter.\r"
+    - "Winnie: That is so nice, sir. Did it work?\r"
+    - 'Peter: Um, I am not sure, but I hoped it would eventually get through that
+      I genuinely care. I have been reading up on how to help someone that keeps
+      pushing people away and one of the most important things was to make yourself
+      available and show that you care.'
+    - "Winnie: I am sure it will eventually work and I will help too!  I hope everything
+      will go back to normal soon, it just feels unfair that bad stuff keeps happening
+      to good people. All I want is for everyone to be happy.\r"
+    - "Me: Are they really worried about me? Hearing this really makes me think about
+      everything that has happened. \r\n"
+    - "Me: I guess things did kind of spin out of control, I didn\u2019t really realize
+      it until now.\r\n"
+    - "Me: I suppose I haven't been feeling the best lately, I just thought it would
+      be easier to ignore my problem. I thought it would be easier to be alone than
+      to be hurt, but in the meantime I was alone and hurt.\r"
+    - 'Me: But do they really care? Should I reach out? Can I?'
 --- !u!65 &8039509649948629949
 BoxCollider:
   m_ObjectHideFlags: 0
