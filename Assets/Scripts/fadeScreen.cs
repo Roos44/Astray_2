@@ -17,10 +17,10 @@ public class fadeScreen : MonoBehaviour
             FadeIn();
     }
 
-    private void Update()
-    {
-                Countdown();
-    }
+    // private void Update()
+    //  {
+    //             Countdown();
+    // }
 
     public void Fade(float alphaIn, float alphaOut)
     {
@@ -34,7 +34,7 @@ public class fadeScreen : MonoBehaviour
     }
     public void FadeOut()
     {
-        Fade(0, 1); 
+        Fade(0, 1);
     }
 
     public IEnumerator FadeRoutine(float alphaIn, float alphaOut)
@@ -49,20 +49,23 @@ public class fadeScreen : MonoBehaviour
 
             timer += Time.deltaTime;
             yield return null;
+            
+            Color newColor2 = fadeColor;
+            newColor2.a = alphaOut;
 
+            rend.material.SetColor("_Color", newColor2);
+
+            if (fadeDuration == 0)
+            {
+                print("Fadedur = 0");
+                Destroy(gameObject);
+            }
 
         }
+    }
+}
 
-        /* Color newColor2 = fadeColor;
-         newColor2.a = alphaOut;
-
-         rend.material.SetColor("_Color", newColor2);
-
-         if (fadeDuration == 0)
-         {
-             print("Fadedur = 0");
-             Destroy(gameObject);
-         }*/
+        /* 
 
     }
     public float timevalue = 10;
@@ -80,8 +83,8 @@ public class fadeScreen : MonoBehaviour
             Destroy(gameObject);
 
         }
+     }
+    */
 
-    }
 
-
-}
+    

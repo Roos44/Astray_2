@@ -8,20 +8,23 @@ using UnityEngine.SceneManagement;
 public class EndDialogue : MonoBehaviour
 {
 
-    public MeshRenderer ren;
+    //public MeshRenderer ren;
     public BoxCollider LastD; //second last dialog
     public BoxCollider EndD; // ending dialouge 
+    public GameObject Bus;
+    
     //public GameObject black;
     //public GameObject HospitalDialogue;
 
 
-   
+
     //bool startTheEnd = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        ren.enabled = false;
+        Bus.SetActive(false);
+        //ren.enabled = false;
         EndD.enabled = false;
         LastD.enabled = true;
         //black.SetActive(false);
@@ -39,7 +42,8 @@ public class EndDialogue : MonoBehaviour
         if (LastD == false)
         {
             EndD.enabled = true;
-            ren.enabled = true;
+            //ren.enabled = true;
+            Bus.SetActive(true);
             Countdown();
         }
     }
@@ -56,8 +60,9 @@ public class EndDialogue : MonoBehaviour
         {
             timevalue = 0;
             Destroy(gameObject);
-            //HospitalDialogue.SetActive(true);
+            
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
         }
         /*timevalude -= Time.deltaTime;
         if (timevalude < 0)

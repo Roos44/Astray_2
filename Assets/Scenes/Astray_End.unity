@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -214,12 +214,6 @@ Transform:
 --- !u!1 &1306804418 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: 126d619cf4daa52469682f85c1378b4a,
-    type: 3}
-  m_PrefabInstance: {fileID: 6154357126152307709}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1306804419 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400002, guid: 126d619cf4daa52469682f85c1378b4a,
     type: 3}
   m_PrefabInstance: {fileID: 6154357126152307709}
   m_PrefabAsset: {fileID: 0}
@@ -546,7 +540,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_Font
       value: 
-      objectReference: {fileID: 12800000, guid: 7e89e80fce8fc06478c726f2f3de7863,
+      objectReference: {fileID: 12800000, guid: 6921a454aa104cf47a67f59c64acaa17,
         type: 3}
     - target: {fileID: 6967926268035607456, guid: 759eeffbcbc7d8a4a803a3fd323f21fa,
         type: 3}
@@ -556,27 +550,27 @@ PrefabInstance:
     - target: {fileID: 6967926268035607456, guid: 759eeffbcbc7d8a4a803a3fd323f21fa,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 69
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 6967926268035607463, guid: 759eeffbcbc7d8a4a803a3fd323f21fa,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1484.2887
+      value: 1362.622
       objectReference: {fileID: 0}
     - target: {fileID: 6967926268035607463, guid: 759eeffbcbc7d8a4a803a3fd323f21fa,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 742.0829
+      value: 696.8994
       objectReference: {fileID: 0}
     - target: {fileID: 6967926268035607463, guid: 759eeffbcbc7d8a4a803a3fd323f21fa,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1.8
+      value: -9
       objectReference: {fileID: 0}
     - target: {fileID: 6967926268035607463, guid: 759eeffbcbc7d8a4a803a3fd323f21fa,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 12
+      value: -4.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 759eeffbcbc7d8a4a803a3fd323f21fa, type: 3}
@@ -1105,75 +1099,6 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!1001 &6919477606498458692
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1306804419}
-    m_Modifications:
-    - target: {fileID: 6919477606626161976, guid: 17ead78678fed344b95bc71f2599678f,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6919477606626161976, guid: 17ead78678fed344b95bc71f2599678f,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6919477606626161976, guid: 17ead78678fed344b95bc71f2599678f,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6919477606626161976, guid: 17ead78678fed344b95bc71f2599678f,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.015
-      objectReference: {fileID: 0}
-    - target: {fileID: 6919477606626161976, guid: 17ead78678fed344b95bc71f2599678f,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6919477606626161976, guid: 17ead78678fed344b95bc71f2599678f,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6919477606626161976, guid: 17ead78678fed344b95bc71f2599678f,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6919477606626161976, guid: 17ead78678fed344b95bc71f2599678f,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6919477606626161976, guid: 17ead78678fed344b95bc71f2599678f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6919477606626161976, guid: 17ead78678fed344b95bc71f2599678f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6919477606626161976, guid: 17ead78678fed344b95bc71f2599678f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6919477606626161983, guid: 17ead78678fed344b95bc71f2599678f,
-        type: 3}
-      propertyPath: m_Name
-      value: Fade
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 17ead78678fed344b95bc71f2599678f, type: 3}
 --- !u!4 &8039509649948629920
 Transform:
   m_ObjectHideFlags: 0
@@ -1244,13 +1169,11 @@ MonoBehaviour:
     - 'Winnie: I however noticed the weight loss and started to worry, I tried to
       bring it up a couple of times and reach out. But I just don''t know how to
       do that, without making it awkward.'
-    - "Peter: Yes, I have noticed it too. I don't really know what happened, the
-      behavior change was almost overnight. Don't get me wrong it's not like my friend
-      was ever a complete social butterfly, it took a very long time before we attended
-      the weekly street gathering and even longer before it was a comfortable experience
-      for both of us.\r"
-    - 'Peter: Yes we are friends, my name is Peter by the way. We used to be a lot
-      closer. I got worried when I never heard them return from work.'
+    - 'Peter: Yes, I have noticed it too. I don''t really know what happened, the
+      behavior change was almost overnight. '
+    - "Don't get me wrong it's not like my friend was ever a complete social butterfly,
+      it took a very long time before we attended the weekly street gathering and
+      even longer before it was a comfortable experience for both of us.\r"
     - "Peter: It happened about 2 months ago. I heard the door slam around 12, which
       was strange since it wasn't their day off. \r"
     - "Peter: This had never happened before and when I started to hear strange noises
