@@ -23,7 +23,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Fireplace
-    second: {fileID: 2100000, guid: 5cf97fe94dc82fd4b97ccba71c9a986e, type: 2}
+    second: {fileID: 2100000, guid: 8fa8dc804edd69346908c7dee1a422a2, type: 2}
   materials:
     materialImportMode: 1
     materialName: 1
@@ -65,7 +65,7 @@ ModelImporter:
     importLights: 0
     fileIdsGeneration: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
