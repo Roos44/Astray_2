@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7269250553598871486}
   - component: {fileID: 7269250553598871485}
   - component: {fileID: 7269250553598871484}
-  - component: {fileID: 2493115225117273279}
+  - component: {fileID: 5450019454740661098}
   m_Layer: 0
   m_Name: DialogeErea
   m_TagString: Untagged
@@ -111,13 +111,13 @@ MonoBehaviour:
   Person: {fileID: 0}
   Responts: {fileID: 0}
   All_Teleport_Point: {fileID: 0}
-  AudioDialogue: {fileID: 0}
   dialogue:
     name: 
     sentences:
     - 
     - 
---- !u!82 &2493115225117273279
+  audioClips: []
+--- !u!82 &5450019454740661098
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -128,7 +128,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -138,7 +138,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 8.037301
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
