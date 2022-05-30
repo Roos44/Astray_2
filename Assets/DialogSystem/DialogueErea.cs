@@ -9,33 +9,42 @@ public class DialogueErea : MonoBehaviour
     public GameObject All_Teleport_Point;
     public AudioClip[] audioClips;
 
-    //DialogueManager dialogueManager;
+    DialogueManager dialogueManager;
 
     public Dialogue dialogue;
+
+    bool isColliding = false;
 
     private void Start()
     {    
         Person.enabled = false;
         Responts.SetActive(false);
 
-        //ref naar manager script
-        //dialogueManager = FindObjectOfType<DialogueManager>();
+        //creates a reference to the dialogueManager.
+        dialogueManager = FindObjectOfType<DialogueManager>();
     }
 
     
     private void OnTriggerEnter(Collider collider)
     {
+        //Makes sure the collision happends once.
+        if (isColliding) return;
+        isColliding = true;
+
+        //When the player enters the trigger area, the dialogue starts.
         if (collider.gameObject.tag == "Player")
         {
+            //Sending all the audio clips to the dialogueManager.
+            foreach (AudioClip item in audioClips)
+            {
+                if (dialogueManager.recievedClips.Count != audioClips.Length)
+                {
+                    dialogueManager.recievedClips.Add(item);
+                }
+            }
 
-
-            //foreach (AudioClip item in audioClips)
-            //{
-            //    dialogueManager.recievedClips.Add(item);
-            //}
-
-            //AudioDialogue.Play();
-            FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+            //Starts the dialogue.
+            dialogueManager.StartDialogue(dialogue);
             Person.enabled = true;
             Responts.SetActive(true);
             All_Teleport_Point.SetActive(false);
@@ -44,6 +53,11 @@ public class DialogueErea : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        //When the player exits the trigger, the audio clips will be cleared from the dialoguemanager.
+        dialogueManager.recievedClips.Clear();
+        dialogueManager.audioClips.Clear();
+        
+        //Destroys the teleportation point.
         Destroy(gameObject);
         Person.enabled = false;        
     }
