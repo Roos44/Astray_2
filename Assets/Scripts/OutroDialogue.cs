@@ -23,7 +23,7 @@ public class OutroDialogue : MonoBehaviour
 
     public void EndTheGame()
     {
-        if (dialogueManager.EndofDialogue == true)
+        if (dialogueManager.endofDialogue == true)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
         }

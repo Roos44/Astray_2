@@ -58,19 +58,22 @@ public class DialogueManager : MonoBehaviour
     //When the skip button is pressed.
     public void DisplaynextSentence()
     {
-        if (sentences.Count == 0 )
+        if (!endofDialogue)
         {
-            EndDialogue();
-            return;
+            if (sentences.Count == 0)
+            {
+                EndDialogue();
+                return;
+            }
+
+            string sentence = sentences.Dequeue();
+            StopAllCoroutines();
+            StartCoroutine(TypeSentence(sentence));
+
+            audioSource.clip = audioClips.Peek();
+            audioClips.Dequeue();
+            audioSource.Play();
         }
-
-        string sentence = sentences.Dequeue();
-        StopAllCoroutines();
-        StartCoroutine(TypeSentence(sentence));
-
-        audioSource.clip = audioClips.Peek();
-        audioClips.Dequeue();
-        audioSource.Play();
     }
 
     IEnumerator TypeSentence (string sentence)
@@ -84,11 +87,11 @@ public class DialogueManager : MonoBehaviour
         }
     }
     
-    public bool EndofDialogue;
+    public bool endofDialogue;
 
     public void EndDialogue()
     {
         animator.SetBool("IsOpen", false);
-        EndofDialogue = true;
+        endofDialogue = true;
     }    
 }
