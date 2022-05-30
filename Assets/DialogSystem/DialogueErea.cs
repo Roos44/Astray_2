@@ -19,14 +19,14 @@ public class DialogueErea : MonoBehaviour
     {    
         Person.enabled = false;
         Responts.SetActive(false);
-
-        //creates a reference to the dialogueManager.
-        dialogueManager = FindObjectOfType<DialogueManager>();
     }
 
     
     private void OnTriggerEnter(Collider collider)
     {
+        //creates a reference to the dialogueManager.
+        dialogueManager = FindObjectOfType<DialogueManager>();
+
         //Makes sure the collision happends once.
         if (isColliding) return;
         isColliding = true;
@@ -56,7 +56,7 @@ public class DialogueErea : MonoBehaviour
         //When the player exits the trigger, the audio clips will be cleared from the dialoguemanager.
         dialogueManager.recievedClips.Clear();
         dialogueManager.audioClips.Clear();
-        dialogueManager.EndofDialogue = false;
+        dialogueManager.endofDialogue = false;
         
         //Destroys the teleportation point.
         Destroy(gameObject);
