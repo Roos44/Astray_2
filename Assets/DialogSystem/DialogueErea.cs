@@ -24,6 +24,8 @@ public class DialogueErea : MonoBehaviour
     
     private void OnTriggerEnter(Collider collider)
     {
+        print("Trigger");
+
         //creates a reference to the dialogueManager.
         dialogueManager = FindObjectOfType<DialogueManager>();
 
@@ -31,9 +33,12 @@ public class DialogueErea : MonoBehaviour
         if (isColliding) return;
         isColliding = true;
 
+        print("Trigger functions");
+
         //When the player enters the trigger area, the dialogue starts.
         if (collider.gameObject.tag == "Player")
         {
+            print("Adding the clips to the dialogueManager");
             //Sending all the audio clips to the dialogueManager.
             foreach (AudioClip item in audioClips)
             {
@@ -43,6 +48,7 @@ public class DialogueErea : MonoBehaviour
                 }
             }
 
+            print("Starting the dialogue");
             //Starts the dialogue.
             dialogueManager.StartDialogue(dialogue);
             Person.enabled = true;
