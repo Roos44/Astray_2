@@ -13,27 +13,33 @@ public class DialogueManager : MonoBehaviour
 
     public AudioSource audioSource;
 
-    private  Queue<string> sentences;
-    Queue<AudioClip> AudioClips;
-
+    private  Queue<string> sentences;    
+    
+    public Queue<AudioClip> audioClips;
     public List<AudioClip> recievedClips;
+
+    public bool skip;
 
     // Start is called before the first frame update
     void Start()
     {
         sentences = new Queue<string>();
+        audioClips = new Queue<AudioClip>();
+    }
 
-        AudioClips = new Queue<AudioClip>();
+    void Update()
+    {
+        if (skip) //Created for simulation the skipp button.
+        {
+            DisplaynextSentence();
+            skip = false;
+        }
     }
 
     public void StartDialogue(Dialogue dialogue)
     {
-        
-
         animator.SetBool("IsOpen", true);
-
         nameText.text = dialogue.name;
-
         sentences.Clear();
 
         foreach (string sentence in dialogue.sentences)
@@ -41,19 +47,15 @@ public class DialogueManager : MonoBehaviour
             sentences.Enqueue(sentence);
         }
 
-        //AudioClips.Clear();
-        //recievedClips.Clear();
-
         foreach (AudioClip item in recievedClips)
         {
-            AudioClips.Enqueue(item);
+            audioClips.Enqueue(item);
         }
-        //AudioClips.Enqueue(recievedClips[0]);
 
-        DisplaynextSentence();    
-
+        DisplaynextSentence();
     }
 
+    //When the skip button is pressed.
     public void DisplaynextSentence()
     {
         if (sentences.Count == 0 )
@@ -66,14 +68,9 @@ public class DialogueManager : MonoBehaviour
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
 
-        audioSource.clip = AudioClips.Dequeue();
+        audioSource.clip = audioClips.Peek();
+        audioClips.Dequeue();
         audioSource.Play();
-
-        //AudioClip audioclip = AudioClips.Dequeue();
-        //audioSource.Stop();
-        //audioSource.clip = audioclip;
-        //audioSource.Play();
-
     }
 
     IEnumerator TypeSentence (string sentence)
@@ -86,14 +83,12 @@ public class DialogueManager : MonoBehaviour
             //DisplaynextSentence();
         }
     }
-
+    
     public bool EndofDialogue;
 
     public void EndDialogue()
     {
         animator.SetBool("IsOpen", false);
         EndofDialogue = true;
-    }
-
-    
+    }    
 }

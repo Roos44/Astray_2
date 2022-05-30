@@ -111,12 +111,12 @@ MonoBehaviour:
   Person: {fileID: 0}
   Responts: {fileID: 0}
   All_Teleport_Point: {fileID: 0}
+  audioClips: []
   dialogue:
     name: 
     sentences:
     - 
     - 
-  audioClips: []
 --- !u!82 &5450019454740661098
 AudioSource:
   m_ObjectHideFlags: 0
