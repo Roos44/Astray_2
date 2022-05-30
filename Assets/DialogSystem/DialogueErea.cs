@@ -56,6 +56,7 @@ public class DialogueErea : MonoBehaviour
         //When the player exits the trigger, the audio clips will be cleared from the dialoguemanager.
         dialogueManager.recievedClips.Clear();
         dialogueManager.audioClips.Clear();
+        dialogueManager.EndofDialogue = false;
         
         //Destroys the teleportation point.
         Destroy(gameObject);
