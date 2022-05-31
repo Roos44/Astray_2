@@ -22,9 +22,10 @@ public class DialogueErea : MonoBehaviour
     }
 
     
-    private void OnTriggerEnter(Collider collider)
+    private void OnTriggerEnter (Collider collider)
     {
         print("Trigger");
+        Debug.Log("enter"); // mischien enterd de player te vaak?
 
         //creates a reference to the dialogueManager.
         dialogueManager = FindObjectOfType<DialogueManager>();
@@ -65,7 +66,7 @@ public class DialogueErea : MonoBehaviour
         dialogueManager.endofDialogue = false;
         
         //Destroys the teleportation point.
-        Destroy(gameObject);
+        //Destroy(gameObject);
         Person.enabled = false;        
     }
 }
