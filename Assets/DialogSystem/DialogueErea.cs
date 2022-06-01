@@ -7,6 +7,7 @@ public class DialogueErea : MonoBehaviour
     public MeshRenderer Person;
     public GameObject Responts;
     public GameObject All_Teleport_Point;
+
     public AudioClip[] audioClips;
 
     DialogueManager dialogueManager;
