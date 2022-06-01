@@ -23,7 +23,7 @@ public class DialogueErea : MonoBehaviour
     }
 
     
-    private void OnTriggerEnter (Collider collider)
+    private void OnTriggerEnter(Collider collider)
     {
         print("Trigger");
         Debug.Log("enter"); // mischien enterd de player te vaak?
@@ -37,26 +37,22 @@ public class DialogueErea : MonoBehaviour
 
         print("Trigger functions");
 
-        //When the player enters the trigger area, the dialogue starts.
-        if (collider.gameObject.tag == "Player")
+        print("Adding the clips to the dialogueManager");
+        //Sending all the audio clips to the dialogueManager.
+        foreach (AudioClip item in audioClips)
         {
-            print("Adding the clips to the dialogueManager");
-            //Sending all the audio clips to the dialogueManager.
-            foreach (AudioClip item in audioClips)
+            if (dialogueManager.recievedClips.Count != audioClips.Length)
             {
-                if (dialogueManager.recievedClips.Count != audioClips.Length)
-                {
-                    dialogueManager.recievedClips.Add(item);
-                }
+                dialogueManager.recievedClips.Add(item);
             }
-
-            print("Starting the dialogue");
-            //Starts the dialogue.
-            dialogueManager.StartDialogue(dialogue);
-            Person.enabled = true;
-            Responts.SetActive(true);
-            All_Teleport_Point.SetActive(false);
         }
+
+        print("Starting the dialogue");
+        //Starts the dialogue.
+        dialogueManager.StartDialogue(dialogue);
+        Person.enabled = true;
+        Responts.SetActive(true);
+        All_Teleport_Point.SetActive(false);
     }
 
     private void OnTriggerExit(Collider other)
