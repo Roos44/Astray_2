@@ -25,7 +25,7 @@ public class OutroDialogue : MonoBehaviour
     {
         if (dialogueManager.endofDialogue == true)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 
