@@ -8,33 +8,28 @@ using UnityEngine.SceneManagement;
 public class EndDialogue : MonoBehaviour
 {
 
-    public BoxCollider LastD; 
-    public BoxCollider EndD; 
+    //public BoxCollider LastD; 
+    //public BoxCollider EndD; 
     public GameObject Bus;
-    
+    private bool StartTheTimer;
     
     void Start()
     {
         Bus.SetActive(false);
-        EndD.enabled = false;
-        LastD.enabled = true;
-      
+        StartTheTimer = false;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        OpenLastDidlogueErea();
-    }
-
-    void OpenLastDidlogueErea()
-    {
-        if (LastD == false)
+        if (StartTheTimer == true)
         {
-            EndD.enabled = true;
-            Bus.SetActive(true);
             Countdown();
         }
+    }
+    private void OnTriggerEnter(Collider collider)
+    {
+        StartTheTimer = true;
+        Bus.SetActive(true);
     }
 
     public float timevalue = 10;

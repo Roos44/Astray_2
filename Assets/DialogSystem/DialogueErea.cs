@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DialogueErea : MonoBehaviour
 {
-    public MeshRenderer Person;
+    public GameObject Person;
     public GameObject Responts;
     public GameObject All_Teleport_Point;
 
@@ -18,7 +18,7 @@ public class DialogueErea : MonoBehaviour
 
     private void Start()
     {    
-        Person.enabled = false;
+        Person.SetActive(false);
         Responts.SetActive(false);
     }
 
@@ -50,7 +50,7 @@ public class DialogueErea : MonoBehaviour
         print("Starting the dialogue");
         //Starts the dialogue.
         dialogueManager.StartDialogue(dialogue);
-        Person.enabled = true;
+        Person.SetActive(true);
         Responts.SetActive(true);
         All_Teleport_Point.SetActive(false);
     }
@@ -64,6 +64,6 @@ public class DialogueErea : MonoBehaviour
         
         //Destroys the teleportation point.
         //Destroy(gameObject);
-        Person.enabled = false;        
+        Person.SetActive(false);
     }
 }
