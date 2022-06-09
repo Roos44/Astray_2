@@ -25,6 +25,7 @@ public class DialogueErea : MonoBehaviour
     
     private void OnTriggerEnter(Collider collider)
     {
+
         print("Trigger");
         Debug.Log("enter"); // mischien enterd de player te vaak?
 
